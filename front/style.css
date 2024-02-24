@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.form{
+    background: rgb(50, 50, 50);
+    width: 45%;
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container{
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo-section img{
+    height: 15em;
+}
+
+.samiti-name{
+    display: flex;
+    align-items: center;
+    border-bottom: 20px ridge #ffbf0f5e;
+    background: yellow;
+    border-radius: 50%;
+    width: 20vw;
+    justify-content: center;
+    height: 15vh;
+}
+
+.samiti-name img{
+    margin-top: 2em;
+    margin-left: 30px;
+    width: 20em;
+    filter: invert(100%);
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 5em;
+    margin-bottom: 0;
+}
+
+.choice{
+    height: 3em;
+    width:10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 25px;
+    background:#FFBE0F;
+    font-weight: bold;
+    transition: 0.5s;
+    color: white;
+}
+
+.active{
+    border:2px solid #FFBE0F;
+    color:#FFBE0F;
+    background-color: white;
+    transform: scale(1.12);
+    transition: 0.4s ease-in-out;
+}
+
+.choice:hover{
+    box-shadow: none;
+}
+
+.choice:active{
+    border: 5px solid #FFBE0F;
+}
+/* test case*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+input {
+  caret-color: red;
+  transition: 0.2s ease-in-out;
+}
+
+.box-design {
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+  padding: 40px;
+  box-sizing: border-box;
+  font-weight: bold;
+  transition: 0.5s ease-in;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  background-image: url("./img/tooryanaadlogo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.input-login{
+    transition: 0.9s ease-in;
+}
+
+.input-register{
+    transition: 0.9s ease-in;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.inputs {
+  text-align: left;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label, input, button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+label{
+  margin-bottom: 4px;
+  color: #FFBE0F;
+  font-size: x-large;
+}
+
+.verticals label{
+    color: white;
+    font-size: medium;
+}
+
+label:nth-of-type(2) {
+  margin-top: 12px;
+}
+
+input::placeholder {
+  color: black;
+  font-weight: bold;
+}
+
+.signin-input{
+  /* appearance: none; */
+  background-color: #f0efeabd;
+  padding: 10px;
+  padding-left: 20px;
+  height: 40px;
+  font-size: 14px;
+  border-radius: 35px;
+
+}
+
+.active-input{
+    border: 3px solid #FFBE0F;
+}
+
+.signin-input:hover{
+  border: 1px solid #b79d53;
+}
+
+.signin-input:active{
+  border: 3px solid #b79d53;
+}
+
+button{
+  color: white;
+  margin-top: 20px;
+  background: #FFBE0F;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 900;
+  transition: 0.5s;
+}
+
+button:hover{
+  background: #d8a311;
+}
+
+button:hover {
+  box-shadow: none;
+}
+
+
+/* test case ended*/
+
+.inactive{
+    display: none;
+}
+
+.info-section{
+    margin-top: 10%;
+    color:#FFBE0F;
+    font-weight: lighter;
+    /* appearance: none; */
+}
+
+
+
+
+/* dropdowm menu */
+.dropdown{
+  width: 100%;
+  background-color: #ecf0f397;
+  padding: 10px;
+  padding-left: 20px;
+  height: 40px;
+  font-size: 14px;
+  border-radius: 35px;
+  font-weight: bold ;
+  cursor: pointer;
+}
+
+.drop-content{
+  font-weight: bold;
+  background-color: black;
+  background: rgb(219, 213, 213);
+  /* margin: 10px; */
+}
+
+.verticals{
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.vertical{
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+}
+
+input[type="checkbox"]{
+  appearance: none;
+  width: 35px;
+  height: 30px;
+  border: 2px solid yellow;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked{
+  appearance: none;
+  width: 35px;
+  height: 30px;
+  border: 2px solid rgb(1, 252, 26);
+  background-color: rgb(1, 252, 26);
+  background-image: url("./img/icons8-check-100.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.checked{
+  background: yellow;
+  border: 2px solid white;
+  
+}
+
+
+@media(max-width:1019px){
+  .form{
+    width: 70%;
+  }
+
+  .samiti-name{
+    width: 30vw;
+  }
+}
+
+
+@media(max-width: 800px){
+  .form{
+    width: 100%;
+  }
+
+  .samiti-name{
+    width: 40vw;
+  }
+} 
+
+@media screen and (min-width: 320px) and (max-width: 650px){
+  .form{
+    width: 100%;
+  }
+
+  .box-design{
+    width: 100%;
+  }
+
+  .verticals{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .vertical{
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .samiti-name{
+    width: 50vw;
+  }
+}

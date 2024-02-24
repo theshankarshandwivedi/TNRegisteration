@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="form">
+            <div class="samiti-name">
+                <img src="./img/tooryanaad2020.png" alt="" srcset="">
+            </div>
+            <div class="form-container">
+                <div class="box-design">
+                    <form class="input-register">
+                        <div class="inputs">
+                            <label for="name">नाम</label>
+                            <input name="name" class="signin-input" type="text" placeholder="Enter Name" />
+                        </div>
+                        <div class="inputs">
+                            <label>वर्ष</label>
+                            <select year class="dropdown">
+                                <option class="drop-content">Select Year</option>
+                                <option class="drop-content" value="1">प्रथम</option>
+                                <option class="drop-content" value="2">द्वितीय</option>
+                            </select>
+                        </div>
+                        <div class="inputs">
+                            <label>स्कालर क्रमांक</label>
+                            <input scholar class="signin-input" type="number" placeholder="Enter Scholar Id" />
+                        </div>
+                        <div class="inputs">
+                            <label for="branch">विभाग</label>
+                            <select branch class="dropdown" name="branch" id="branch">
+                                <option class="drop-content">Select Branch</option>
+                                <option class="drop-content" value="mech">यांत्रिक अभियांत्रिकी(ME)</option>
+                                <option class="drop-content" value="cse">संगड़क अभियांत्रिकी(CSE)</option>
+                                <option class="drop-content" value="ece">ऋणविद्युतिकी एवं संचार अभियांत्रिकी(ECE)</option>
+                                <option class="drop-content" value="civil">सिविल अभियांत्रिकी(CIVIL)</option>
+                                <option class="drop-content" value="electrical">वैद्युत अभियांत्रिकी(EE)</option>
+                                <option class="drop-content" value="chemical">रसायन अभियांत्रिकी(CE)</option>
+                                <option class="drop-content" value="mme">पदार्थ एवं धातुक्रम अभियांत्रिकी(MME)</option>
+                                <option class="drop-content" value="data">गणित एवं डाटा अभियांत्रिकी(MDS)</option>
+                                <option class="drop-content" value="archi">वास्तुकला(ARCHI)</option>
+                                <option class="drop-content" value="plan">नियोजन(PLAN)</option>
+                            </select>
+                        </div>
+                        <div class="inputs">
+                            <label>ई-मेल</label>
+                            <input mail class="signin-input" type="email" placeholder="Enter Email" />
+                        </div>
+                        <div class="inputs">
+                            <label>संपर्क</label>
+                            <input contact class="signin-input" type="number"
+                                placeholder="Enter Contact Detail" />
+                        </div>
+                        <label for="">कार्यक्षेत्र</label>
+                        <div class="verticals">
+                            <div class="vertical">
+                                <label>संपादक</label>
+                                <input value="sampadak" type="checkbox" />
+                            </div>
+                            <div class="vertical">
+                                <label>प्रबंधक</label>
+                                <input value="prabandhak" type="checkbox" />
+                            </div>
+                            <div class="vertical">
+                                <label>वेब अभिकल्पक</label>
+                                <input value="web" type="checkbox" />
+                            </div>
+                            <div class="vertical">
+                                <label>अभिकल्पक</label>
+                                <input value="designer" type="checkbox" />
+                            </div>
+                            <div class="vertical">
+                                <label>वीडियो संपादक</label>
+                                <input value="video" type="checkbox" />
+                            </div>
+                            <div class="vertical">
+                                <label>छायाकार</label>
+                                <input value="photographer " type="checkbox" />
+                            </div>
+                            <div class="vertical">
+                                <label>हिन्दीतर भाषी</label>
+                                <input value="hindi" type="checkbox" />
+                            </div>
+                            <div class="vertical">
+                                <label>एनिमेसन कलाकार</label>
+                                <input value="animation" type="checkbox" />
+                            </div>
+
+                        </div>
+                        <button submit type="submit">पंजीयन करें</button>
+                    </form>
+                    <div class="info-section">
+                        <h3>संपर्क सूत्र</h3>
+                        <div class="contacts">
+                            <div class="contact1">
+                                सत्यम गुप्ता - +91 78XXXXXXXX
+                            </div>
+                            <div class="contact2">
+                                कोमल द्विवेदी - +91 78XXXXXXXX
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
